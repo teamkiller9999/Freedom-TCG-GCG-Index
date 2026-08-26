@@ -1,0 +1,24 @@
+git add .
+git commit -m "update: 修正部署與代碼優化"
+npm run deploy
+
+npm run build
+npm run dev
+
+
+
+npm run build
+lsof -ti:5173 | xargs -r kill
+sleep 1
+lsof -ti:5173 | xargs -r kill -9
+npm run dev
+
+最實用兩種：
+
+只清 5173（推薦）
+lsof -ti:5173 | xargs -r kill
+sleep 1
+lsof -ti:5173 | xargs -r kill -9
+
+清所有 Vite（同工作區常用）
+pkill -f "node .*vite" || true
