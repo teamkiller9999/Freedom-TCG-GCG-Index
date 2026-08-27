@@ -35,7 +35,7 @@
 
     <main id="top">
       <section class="hero section-wrap">
-        <div class="hero-copy reveal">
+        <div class="reveal">
           <p class="eyebrow"><span></span> GUNDAM CARD GAME / DATABASE</p>
           <h1 data-i18n-html="heroTitle">GCG 卡牌資料庫<br><em>與組牌工具</em></h1>
           <p class="hero-description" data-i18n="heroDescription">搜尋卡牌、查看完整效果，或直接建立你的下一副牌組。所有 GCG 玩家都能快速上手的實用工具。</p>
@@ -43,39 +43,98 @@
             <a class="button button-primary" href="https://gcg.freedom-tcg.org/?mode=collection" target="_blank" rel="noreferrer" data-i18n-html="explore">探索圖鑑 <span>→</span></a>
             <a class="button button-quiet" href="https://gcg.freedom-tcg.org/?mode=deck" target="_blank" rel="noreferrer" data-i18n-html="openBuilder">開啟組牌工具 <span>↗</span></a>
           </div>
-          <div class="hero-meta"><span class="status-dot"></span> <span data-i18n="updating">資料持續更新中</span> <i></i> 繁中 · 简中 · 日本語 · English · ไทย</div>
+          <div class="hero-meta"><span class="status-dot"></span> <span data-i18n="updating">資料持續更新中</span> <i></i> 香港中文 · 繁體中文 · 简体中文 · 日本語 · English · ไทย</div>
         </div>
-        <div class="hero-visual reveal reveal-delay" aria-label="Gundam 卡牌收藏預覽">
-          <div class="visual-label">CARD<br><strong>CATALOG</strong></div>
-          <div class="card-stack">
-            <div class="playing-card card-back"><span>GCG</span><small>FREEDOM TCG</small></div>
-            <div class="playing-card card-featured"><div class="card-art"></div><div class="card-info"><b>UNIT · BLUE</b><strong>RX-78-2</strong><small>GD01-001 / LR</small></div></div>
-            <div class="card-chip">01 <span>COLLECTION</span></div>
-          </div>
-          <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <div class="reveal reveal-delay" aria-label="Freedom TCG logo">
+          <img class="hero-logo" src="FreedomTCG_GCG_Logo_H-01.png" alt="Freedom TCG GCG Logo">
         </div>
       </section>
 
       <section class="stats section-wrap reveal" aria-label="平台資料">
-        <div><strong>10,000<span>+</span></strong><small data-i18n="cards">卡牌資料</small></div>
-        <div><strong>05</strong><small data-i18n="languages">支援語言</small></div>
+        <div><strong data-i18n="dailyUpdate">每天更新</strong><small data-i18n="cards">卡牌資料</small></div>
+        <div><strong>06</strong><small data-i18n="languages">支援語言</small></div>
         <div><strong>02</strong><small data-i18n="modes">核心模式</small></div>
         <div class="stats-note" data-i18n-html="statsNote">研究最新彈數<br><b>準備你的下一戰。</b></div>
       </section>
 
       <section class="feature-section section-wrap" id="collection">
-        <div class="section-heading reveal"><p class="eyebrow"><span></span>01 / CARD LIBRARY</p><h2 data-i18n-html="collectionTitle">資料庫，<br><em>為探索而生。</em></h2><p data-i18n="collectionDescription">從系列、類型到效果標籤，快速找到你腦海中的那張卡。</p></div>
+        <div class="section-heading reveal">
+			<p class="eyebrow"><span></span>01 / CARD LIBRARY</p>
+			<h2 data-i18n-html="collectionTitle">資料庫，<br><em>為探索而生。</em></h2>
+			<p data-i18n="collectionDescription">從系列、類型到效果標籤，快速找到你腦海中的那張卡。</p>
+		</div>
         <div class="feature-grid">
-          <article class="feature-panel collection-panel reveal reveal-delay"><div class="panel-number">01</div><div class="panel-icon">▦</div><h3 data-i18n="visualLibrary">視覺化卡牌圖鑑</h3><p data-i18n="visualDescription">以清晰的圖像矩陣瀏覽每一張卡，產品編號、稀有度與官方譯名一目了然。</p><div class="tag-row"><span>原畫</span><span>異畫</span><span>LR / R / U / C</span></div><a href="https://gcg.freedom-tcg.org/?mode=collection" target="_blank" rel="noreferrer" class="panel-link" data-i18n-html="enterLibrary">進入圖鑑 <b>→</b></a></article>
-          <article class="feature-panel filter-panel reveal reveal-delay-2"><div class="panel-number">02</div><div class="filter-top"><div class="panel-icon">⌕</div><span>ADVANCED FILTER</span></div><h3 data-i18n-html="searchTitle">精準搜尋<br>不漏掉任何可能</h3><div class="fake-search"><span data-i18n="searchPlaceholder">搜尋卡名、產品編號...</span> <b>⌕</b></div><div class="filter-chips"><span>UNIT</span><span>Lv. 4</span><span>高機動</span><span>鐵華團</span></div><a href="https://gcg.freedom-tcg.org/?mode=collection" target="_blank" rel="noreferrer" class="panel-link" data-i18n-html="startSearch">開始搜尋 <b>→</b></a></article>
+			  <article class="feature-panel collection-panel reveal reveal-delay">
+				  <div class="panel-number">01</div>
+				  <div class="filter-top">
+            <div class="panel-icon">▦</div>
+            <span>VISUAL CATALOG</span>
+          </div>
+					  <h3 data-i18n-html="visualLibrary">視覺化<br>卡牌圖鑑</h3>
+					  <p data-i18n="visualDescription">以清晰的圖像矩陣瀏覽每一張卡，產品編號、稀有度與官方譯名一目了然。</p>
+					  <div class="tag-row">
+					  <span>原畫</span><span>異畫</span><span>稀有度</span>
+				  </div>
+				  <a href="https://gcg.freedom-tcg.org/?mode=collection" target="_blank" rel="noreferrer" class="panel-link" data-i18n-html="enterLibrary">進入圖鑑 <b>→</b></a>
+			  </article>
+			<article class="feature-panel filter-panel reveal reveal-delay-2 visible">
+				<div class="panel-number">02</div>
+				<div class="filter-top">
+					<div class="panel-icon">⌕</div>
+					<span>ADVANCED FILTER</span>
+				</div>
+				<h3 data-i18n-html="searchTitle">精準搜尋<br>不漏掉任何可能</h3>
+				<div class="fake-search">
+					<span data-i18n="searchPlaceholder">搜尋卡名、產品編號...</span>
+					<b>⌕</b>
+				</div>
+				<div class="filter-chips">
+					<span>類型</span>
+					<span>LEVEL</span>
+					<span>AP</span>
+					<span>AP</span>
+				</div>
+				<a href="https://gcg.freedom-tcg.org/?mode=collection" target="_blank" rel="noreferrer" class="panel-link" data-i18n-html="startSearch">開始搜尋 <b>→</b></a>
+			</article>
         </div>
       </section>
 
-      <section class="builder-section" id="builder"><div class="section-wrap builder-layout"><div class="builder-copy reveal"><p class="eyebrow"><span></span>02 / DECK BUILDER</p><h2 data-i18n-html="builderTitle">你的牌組，<br><em>你的規則。</em></h2><p data-i18n="builderDescription">主牌組、副牌組與備用欄位，讓每一次調整都貼近實戰。</p><a class="button button-primary" href="https://gcg.freedom-tcg.org/?mode=deck" target="_blank" rel="noreferrer" data-i18n-html="startBuilding">開始組牌 <span>→</span></a></div><div class="deck-preview reveal reveal-delay"><div class="deck-header"><span>MY DECK / 001</span><strong>NEO ZEON <i>●</i></strong></div><div class="deck-body"><div class="deck-count"><strong>50</strong><small>MAIN DECK</small><div class="count-bar"><i></i></div><span>12 / 50 cards</span></div><div class="mini-cards"><i></i><i></i><i></i><i></i><i></i><i></i></div></div><div class="deck-footer"><span>BLUE <b>+</b> RED</span><span>EXPORT READY ↗</span></div></div></div></section>
+      <section class="builder-section" id="builder">
+		  <div class="section-wrap builder-layout">
+			  <div class="builder-copy reveal">
+			  <p class="eyebrow"><span></span>02 / DECK BUILDER</p>
+			  <h2 data-i18n-html="builderTitle">你的牌組，<br><em>你的規則。</em></h2>
+			  <p data-i18n="builderDescription">主牌組、副牌組與備用欄位，讓每一次調整都貼近實戰。</p>
+			  <a class="button button-primary" href="https://gcg.freedom-tcg.org/?mode=deck" target="_blank" rel="noreferrer" data-i18n-html="startBuilding">開始組牌 <span>→</span></a>
+			  </div>
+		  <div class="deck-preview reveal reveal-delay">
+			  <div class="deck-header">
+				  <span>MY DECK / 001</span>
+				  <strong>NEO ZEON <i>●</i></strong>
+			  </div>
+		  <div class="deck-body">
+			  <div class="deck-count">
+				  <strong>50</strong><small>MAIN DECK</small>
+				  <div class="count-bar"><i></i></div><span>12 / 50 cards</span></div>
+				  <div class="mini-cards"><i></i><i></i><i></i><i></i><i></i><i></i></div></div>
+				  <div class="deck-footer"><span>BLUE <b>+</b> RED</span><span>EXPORT READY ↗</span></div>
+			  </div>
+		  </div>	
+	  </section>
 
-      <section class="links-section section-wrap" id="links"><div class="links-intro reveal"><p class="eyebrow"><span></span>QUICK ACCESS</p><h2 data-i18n-html="linksTitle">一起玩得<br><em>更深入。</em></h2></div><div class="link-list reveal reveal-delay"><a href="https://www.gundam-gcg.com/" target="_blank" rel="noreferrer"><span class="link-index">01</span><b data-i18n="officialSite">GCG 官方網站</b><small>OFFICIAL WEBSITE</small><span>↗</span></a><a href="https://www.bandai-tcg-plus.com/" target="_blank" rel="noreferrer"><span class="link-index">02</span><b data-i18n="eventRegistration">TCG+ 官方活動報名</b><small>EVENTS & TOURNAMENTS</small><span>↗</span></a><a href="https://www.gundam-gcg.com/zh-tw/decks/" target="_blank" rel="noreferrer"><span class="link-index">03</span><b data-i18n="officialDecks">官方牌組分享</b><small>OFFICIAL DECKS</small><span>↗</span></a><a href="https://www.gundam-gcg.com/zh-tw/rules/faqs/" target="_blank" rel="noreferrer"><span class="link-index">04</span><b data-i18n="officialFaq">官方 FAQ</b><small>OFFICIAL FAQ</small><span>↗</span></a></div></section>
+      <section class="links-section section-wrap" id="links">
+		  <div class="links-intro reveal"><p class="eyebrow"><span></span>QUICK ACCESS</p><h2 data-i18n-html="linksTitle">一起玩得<br><em>更深入。</em></h2></div><div class="link-list reveal reveal-delay">
+			  <a href="https://www.gundam-gcg.com/" target="_blank" rel="noreferrer"><span class="link-index">01</span><b data-i18n="officialSite">GCG 官方網站</b><small>OFFICIAL WEBSITE</small></a>
+			  <a href="https://www.bandai-tcg-plus.com/" target="_blank" rel="noreferrer"><span class="link-index">02</span><b data-i18n="eventRegistration">TCG+ 官方活動報名</b><small>EVENTS & TOURNAMENTS</small></a>
+			  <a href="https://www.gundam-gcg.com/zh-tw/decks/" target="_blank" rel="noreferrer"><span class="link-index">03</span><b data-i18n="officialDecks">官方牌組分享</b><small>OFFICIAL DECKS</small></a>
+			  <a href="https://www.gundam-gcg.com/zh-tw/rules/faqs/" target="_blank" rel="noreferrer"><span class="link-index">04</span><b data-i18n="officialFaq">官方 FAQ</b><small>OFFICIAL FAQ</small></a>
+		  </div>
+	  </section>
     </main>
-    <footer class="footer section-wrap"><p data-i18n-html="footer">資料來自官方網站及網絡知識整理。歡迎轉載，但請註明出處。</p><span class="footer-note">Freedom TCG | GCG 資料庫 & 組牌工具· MADE FOR PLAYERS· 2026</span></footer>
+    <footer class="footer section-wrap">
+		<p data-i18n-html="footer">資料來自官方網站及網絡知識整理。歡迎轉載，但請註明出處。</p>
+		<span class="footer-note">Freedom TCG | GCG 資料庫 & 組牌工具· MADE FOR PLAYERS· 2026</span>
+	</footer>
   </div>
   <script src="script.js"></script>
 </body>
