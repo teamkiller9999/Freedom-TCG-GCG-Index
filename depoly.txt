@@ -4,7 +4,7 @@
 部署方式：
 git add .
 git commit -m "update: 修正部署與代碼優化"
-git push
+git push origin main
 
 若使用 GitHub Pages，push 後由 GitHub 自動發佈，無需其他建置步驟。
 
