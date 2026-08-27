@@ -20,12 +20,15 @@ const setLanguage = (language, translations) => {
   const dictionary = translations[language] || translations[defaultLanguage];
 
   document.documentElement.lang = language;
-  document.title = dictionary.pageTitle;
+  document.title = dictionary[document.body.dataset.titleKey || 'pageTitle'];
   document.querySelectorAll('[data-i18n]').forEach((element) => {
     element.textContent = dictionary[element.dataset.i18n];
   });
   document.querySelectorAll('[data-i18n-html]').forEach((element) => {
     element.innerHTML = dictionary[element.dataset.i18nHtml];
+  });
+  document.querySelectorAll('[data-i18n-placeholder]').forEach((element) => {
+    element.placeholder = dictionary[element.dataset.i18nPlaceholder];
   });
 
   currentLanguage.textContent = dictionary.label;
@@ -75,3 +78,20 @@ document.addEventListener('click', (event) => {
     languageButton.setAttribute('aria-expanded', 'false');
   }
 });
+
+const dictionarySearch = document.querySelector('#dictionary-search');
+const dictionaryRows = document.querySelectorAll('.dict-table tbody tr');
+const dictionaryEmpty = document.querySelector('.dict-empty');
+
+if (dictionarySearch) {
+  dictionarySearch.addEventListener('input', () => {
+    const query = dictionarySearch.value.trim().toLowerCase();
+    let visibleCount = 0;
+    dictionaryRows.forEach((row) => {
+      const matches = row.textContent.toLowerCase().includes(query);
+      row.hidden = !matches;
+      if (matches) visibleCount += 1;
+    });
+    if (dictionaryEmpty) dictionaryEmpty.hidden = visibleCount !== 0;
+  });
+}
