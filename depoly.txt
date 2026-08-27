@@ -1,24 +1,18 @@
+此專案為純靜態網站（index.html + script.js + styles.css），沒有 package.json，
+不需要（也無法）執行 npm run build / npm run dev / npm run deploy。
+
+部署方式：
 git add .
 git commit -m "update: 修正部署與代碼優化"
-npm run deploy
+git push
 
-npm run build
-npm run dev
+若使用 GitHub Pages，push 後由 GitHub 自動發佈，無需其他建置步驟。
+
+本機預覽（可選，不依賴 npm）：
+python3 -m http.server 5173
 
 
-
-npm run build
+若需要清掉本機預覽的 5173 埠：
 lsof -ti:5173 | xargs -r kill
 sleep 1
 lsof -ti:5173 | xargs -r kill -9
-npm run dev
-
-最實用兩種：
-
-只清 5173（推薦）
-lsof -ti:5173 | xargs -r kill
-sleep 1
-lsof -ti:5173 | xargs -r kill -9
-
-清所有 Vite（同工作區常用）
-pkill -f "node .*vite" || true
